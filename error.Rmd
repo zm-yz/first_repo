@@ -1,0 +1,27 @@
+---
+title: "error"
+author: "z"
+date: "2020/3/20"
+output: pdf_document
+---
+
+## The process of compiling Advanced R into a PDF
+1.Download the Source: 
+<https://github.com/hadley/adv-r/archive/master.zip>
+
+##2.Install R Package dependencies
+```{r eval=FALSE}
+devtools::install_github("hadley/sloop")
+devtools::install_github("hadley/emo")
+```
+
+## In the process of installing above packages,I have some questions:
+2.1 Error : Failed to install 'sloop' from GitHub: schannel: failed to receive handshake, SSL/TLS connection failed
+solutions:
+```
+git config --global http.sslBackend "openssl"
+git config --global http.sslCAInfo D:\文件ZM\learn_git\adv-r
+```
+2.2 Error : Failed to install 'sloop' from GitHub:
+  System command 'Rcmd.exe' failed, exit status: -1, stdout + stderr empty
+I have not solve this question,i will continue
